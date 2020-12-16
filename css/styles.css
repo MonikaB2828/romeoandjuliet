@@ -1,0 +1,736 @@
+
+
+@font-face { font-family: Felix Titling;
+             src: url('../font/Felixti.ttf'); }
+
+@font-face { font-family: Hind Regular;
+             src: url('../font/Hind-Regular.ttf'); }
+
+@font-face { font-family: Hind Light;
+             src: url('../font/Hind-Light.ttf'); }
+                  
+/* =========================================================
+============ Default styles ================================
+========================================================== */
+
+/*  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+a:link, a:visited {
+    --color: #c3c3c5;
+}
+a:hover, a:active {
+    --color: #fff;
+}
+/* Border + padding is incl. */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+.auto-trennung {
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+/* =========================================================
+============ Generell styles ===============================
+========================================================== */
+body {
+    font-family: "Hind Regular", Verdana, "Arial",sans-serif;
+}   
+html, body {
+  height:100%;
+}
+html {
+  scroll-behavior: smooth;
+}             
+
+/* =========================================================
+============ Header   ======================================
+========================================================== */
+#header {
+    background: #A83123;
+    width: 1244px;
+    height: 120px;
+    margin: 5px auto 0;
+    font-size: 16px;    
+}
+#header .nav {
+    margin: 10px auto; 
+    font-family: "Hind Regular";
+}
+#header ul {
+    float: right;
+    padding: 3.5%;
+}
+#header ul li {
+    float: left;
+    margin-right: 10px;
+    list-style-type: none;
+}
+#header ul li a {
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+}
+#header .header-image {
+    float: left;
+    height: 100%;
+}
+#header .header-image img {
+    height: 80%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+/* =========================================================
+============ Main container  ===============================
+========================================================== */
+.main-container {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 1244px;
+    background-color: #fff;
+    min-height: 400px;
+    color: #000;
+    position: relative;
+}
+
+.main-container .main-headline {
+    text-align: center;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: bold;
+    top: 300px;
+    left: 200px;
+    font-family: "Felix Titling";
+    position: absolute;
+    color: #000;
+    z-index: 10
+}
+
+.main-container .main-image {
+    text-align: center;
+    margin-top: 10px;
+    position: relative;
+}
+.main-container .main-image .bg {
+    position: absolute;
+    background: #260E33;
+    opacity: 0.4;
+    top: 32%;
+    width: 100%;
+    height: 35%;
+    z-index: 0;
+}
+.main-container .main-image img {
+    width: 88%;
+    /*-webkit-box-shadow: 10px 10px 5px 0px rgba(255,195,188,1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(255,195,188,1);
+    box-shadow: 10px 10px 5px 0px rgba(255,195,188,1);*/
+    --margin-left: 25%;
+    position: relative;
+    z-index: 1;
+}
+#site_about .main-container .main-image img {
+    width: 72%;
+}
+.two-columns-line {
+    margin-top: 35px;
+}
+.two-columns-line .two-column {
+    float: left;
+    margin-left: 6%;
+    width: 41%;
+}
+#site_about .two-columns-line .two-column {
+    float: left;
+    margin-left: 2.6%;
+    width: 34.4%;
+}
+#site_about .two-columns-line .two-column:first-child {
+    float: left;
+    margin-left: 14.3%;
+    width: 34.4%;
+}
+.two-columns-line .two-column img {
+    width: 100%;
+}
+.two-columns-line .two-column .button {
+    border: solid 2px #000;
+    width: auto;
+    background: yellow;
+}
+.two-columns-line .two-column .button:hover {
+    border: solid 2px #232323;
+    background: #ffbd00;
+}
+.two-columns-line .two-column .button a {
+    color: #000;
+    text-decoration: none;
+    font-size: 90%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.three-columns-line {
+    margin-top: 30px;
+    background: #A89FAD;
+    padding: 25px 0;
+}
+.three-columns-line .three-column {
+    float: left;
+    margin-left: 6%;
+    width: 25%;
+}
+#site_about .three-columns-line .three-column {
+    margin-left: 6.2%;
+    width: 20.1%;
+}
+#site_about .three-columns-line .three-column:first-child {
+    margin-left: 13.7%;
+}
+.three-column-pic img {
+    width: 100%;
+}
+.three-column-name {
+    margin-top: 5px;
+    color: #60091D;
+}
+.three-column-text {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+============ CONTACT =========================================
+========================================================== */
+.address-text-column  {
+    float: left;
+    width: 36%;
+    margin-left: 4%; 
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    padding-top: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.address-text-column p {
+    margin-bottom: 15px;
+}
+.address-text-column a {
+    text-decoration: none;
+    color: #000;
+}
+.address-pic-column  {
+    float: left;
+    width: 51.5%;
+    margin-left: 4%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.address-pic-column  img {
+    width: 100%;
+}
+
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+/* =========================================================
+============ Tickets =========================================
+========================================================== */
+.ticket-box6, .ticket-box7, .ticket-box8 {
+    border: solid 1px #000;
+    color: #000;
+    font-size: 25px;
+}
+.ticket-box2, .ticket-box5 {
+    font-size: 36px;
+    font-weight: bold;
+}
+.ticket-box3 {
+    font-size: 30px;
+}
+.ticket-box1, .ticket-box2, .ticket-box3 {
+    width: 45%;
+    margin-left: 30%;
+    padding-left: 10%;
+}
+.ticket-box4, .ticket-box5, .ticket-box6 {
+    width: 60%;
+    margin-left: 6%;
+    padding-left: 8%;
+}
+.ticket-box5 {
+    padding-left: 0;
+}
+.ticket-box7, .ticket-box8 {
+    width: 50%;
+    margin-left: 16%;
+    padding-left: 10%;
+}
+.ticket-box2, .ticket-box5 {
+    margin-top: 25px;
+}
+.ticket-box3, .ticket-box6 {
+    margin-top: 10px;
+}
+.ticket-box7 {
+    margin-top: 25px;
+}
+.ticket-box8 {
+    margin-top: 10px;
+}
+.ticket-box6 input, .ticket-box8 input {
+    border: none;
+}
+.checkout-box {
+    width: 24%;
+    margin-left: 56%;
+    padding: 2%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background: #60091D;
+    margin-top: 20px;
+}
+.checkout-box a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* =========================================================
+============ ticket-confirmation ===========================
+========================================================== */
+
+.ticket-confirmation {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    z-index: 2;
+    text-align: center;
+    width: 90%;
+    background: rgba(255,255,0,0.8);
+    padding: 25px 0;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000;
+}
+.conf-head {
+    font-size: 120%;
+    padding-bottom: 20px;
+}
+.confirmation-image {
+    width: 70%;
+    margin-top: 30px;
+    margin-left: 15%;
+}
+.confirmation-image img {
+    width: 100%;
+}
+.ticket-confirmation p {
+    margin-bottom: 15px;
+}
+
+/* =========================================================
+============ Footer =========================================
+========================================================== */
+#footer {
+    text-align: center;
+    width: 1244px;
+    background: #260E33;
+    margin: 20px auto;
+    height: 50px;
+    padding-top: 10px;
+}
+#footer img {
+    height: 30px;
+    margin-left: 10px;
+}
+
+
+/* =========================================================
+============ Off canvas ====================================
+========================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+#nav {
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  position: fixed;
+  z-index: 4;
+  overflow: visible;
+  height: 100%;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+#nav:target {
+  left: 0;
+}
+#nav:target #openNav {
+  -moz-transition: all 0.2s 0s;
+  -o-transition: all 0.2s 0s;
+  -webkit-transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  transition: all 0.2s 0s;
+  left: -45px;
+}
+#nav h3 {
+  margin: 26px 12px 14px 42px;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  font-size: 1.25em;
+}
+#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#nav li {
+  margin: 0;
+  padding: 5px 0;
+  border-top: 1px solid #ffffff;
+}
+#nav li a {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .1em;
+  color: #fff;
+  display: block;
+  padding: 5.6px 12px;
+  margin: 0;
+}
+#nav li a:hover {
+  background: #A83123;
+}
+
+.toggle-nav {
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  display: block;
+  top: 20px;
+  --left: 6px;
+  right: 6px;
+  height: 24px;
+  width: 32px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 3;
+}
+.toggle-nav:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+.toggle-nav:before, .toggle-nav:after {
+  position: absolute;
+  content: '\00a0';
+  display: block;
+  width: 100%;
+  height: 0;
+}
+
+#openNav {
+  -moz-transition: all 0.2s 0.6s;
+  -o-transition: all 0.2s 0.6s;
+  -webkit-transition: all 0.2s;
+  -webkit-transition-delay: 0.6s;
+  transition: all 0.2s 0.6s;
+  position: fixed;
+  border-bottom: 4px solid;
+  color: #000;
+  z-index: 1;
+}
+#openNav:hover {
+  color: #ff0000;
+}
+#openNav:before {
+  top: 0;
+  border-bottom: 4px solid;
+}
+#openNav:after {
+  top: 50%;
+  border-bottom: 4px solid;
+}
+
+#closeNav {
+  position: absolute;
+  width: 200px;
+  z-index: 5;
+  color: #fff;
+}
+#closeNav:hover {
+  color: #A83123;
+}
+#closeNav:before, #closeNav:after {
+  width: 21px;
+  top: 42%;
+  --left: 0;
+  left: 42px;
+}
+#closeNav:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-bottom: 4px solid;
+}
+#closeNav:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  border-bottom: 4px solid;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 42px 12px;
+} 
+.off-canvas {
+    display: none;
+}
+.oben-nicht {
+    display: none;
+}
+
+/* =========================================================
+============ Responsive  ===================================
+========================================================== */
+
+@media (max-width: 1500px) {
+}
+
+
+@media (max-width: 1300px) {
+}
+
+
+
+
+@media (max-width: 1244px) {
+#header, .main-container, #footer {
+    width: 100%;
+}    
+}
+
+
+/*
+@media (max-width: 1100px) {
+.ticket-box1, .ticket-box2, .ticket-box3 {
+    padding-left: 3%;
+}
+.ticket-box4, .ticket-box5, .ticket-box6 {
+    padding-left: 2%;
+}
+}
+*/
+
+
+@media (max-width: 500px) {
+.main-container .main-image img, #site_about .main-container .main-image img {
+    width: 60%;
+}
+
+
+
+.three-columns-line {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+.three-columns-line .three-column, #site_about .three-columns-line .three-column {
+    float: none;
+    margin-left: 6%;
+    width: 88%;
+}
+.three-column-pic img {
+    width: 60%;
+}
+.three-column-name {
+    margin-top: 2px;
+}
+.three-column-text {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #60091D;
+}
+.last-text {
+    border-bottom: none;
+}
+
+
+
+
+
+
+.two-columns-line .two-column, #site_about .two-columns-line .two-column, #site_about .two-columns-line .two-column:first-child {
+    float: none;
+    margin-left: 12%;
+    width: 76%;
+    margin-bottom: 10px;
+}
+.main-container .main-headline {
+    font-size: 15px;
+    line-height: 21px;
+    top: 5.5%;
+    left: 15%;
+}
+#header ul li a {
+    font-size: 16px;
+}
+#header ul {
+    padding: 5% 2%;
+}
+.main-container .main-image img, #site_about .main-container .main-image img {
+    width: 70%;
+    /*-webkit-box-shadow: 7px 7px 5px 0px rgba(255,195,188,1);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(255,195,188,1);
+    box-shadow: 7px 7px 5px 0px rgba(255,195,188,1);*/
+}
+.address-text-column {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 2%;
+}
+.address-pic-column  {
+    float: none;
+    width: 80%;
+    margin-left: 10%;
+}
+.ticket-box1, .ticket-box2, .ticket-box3, .ticket-box4, .ticket-box5, .ticket-box6, .ticket-box7, .ticket-box8 {
+    width: 90%;
+    margin-left: 5%;
+    padding-left: 1%;
+    font-size: 30px;
+}
+.ticket-box4 {
+    margin-top: 25px;
+}
+.checkout-box {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.ticket-confirmation {
+    top: 40%;
+    left: 5%;
+    width: 90%;
+    padding: 20px 0;
+    font-size: 16px;
+}
+.ticket-confirmation p {
+    margin-bottom: 10px;
+}
+
+
+
+#header ul li a {
+    font-size: 14px;
+}
+#header ul {
+    padding: 8% 1%;
+}
+#header .header-image img {
+    height: 50%;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.ticket-confirmation {
+    top: 40%;
+    left: 4%;
+    width: 92%;
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+.ticket-confirmation p {
+    margin-bottom: 6px;
+}
+
+
+
+#header {
+    height: 90px;
+}
+#header .header-image img {
+    height: 75%;
+    margin-top: 5%;
+    margin-left: 8%;
+}
+#header ul {
+    display: none;
+}
+.three-column-pic img {
+    width: 80%;
+}
+.off-canvas {
+    display: block;
+}
+.ticket-confirmation {
+    position: relative;
+    left: 0;
+    width: 92%;
+    margin: 2% 4% 0;
+    padding: 15px 0;
+
+}
+
+
+
+
+#header {
+    height: 80px;
+}
+}
+
+@media (max-width: 414px) {
+}
